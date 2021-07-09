@@ -1,0 +1,15 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+
+
+.react-calendar {
+    width: 400px;
+    background: $white-color;
+    border: none;
+    line-height: 2.5;
+    height: 523px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: -1px 0px 24px 0px rgba(0,0,0,0.75);
+}

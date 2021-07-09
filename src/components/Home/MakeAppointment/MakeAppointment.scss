@@ -1,0 +1,65 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.makeAppointment{
+    background-image: url('../../../images/appoint-bg.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+    position: relative;
+   
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 12, 12, 0.7);
+    }
+    & .img{
+        margin-top: -146px;
+        z-index: 1;
+        position: relative;
+    }
+    & .appoint-content{
+        position: relative;
+        z-index: 1;
+        & .title{
+            & h5{
+                @extend %subTitle;
+                text-align: left
+            }
+            & h3{
+                @extend %title;
+                text-align: left;
+                color: $white-color;
+                margin-bottom: 20px;
+            }
+        }
+        & button{
+            @extend %button;
+        }
+    }
+    
+}
+
+
+// responsive code
+@media (max-width: 767px) { 
+    .appoint-content{
+        text-align: center;
+        margin-bottom: 60px;
+        & .title{
+            & h5{
+                text-align: center !important;
+                margin-top: 30px;
+            }
+            & h3{
+                text-align: center !important;
+            }
+        }
+    }
+}
+

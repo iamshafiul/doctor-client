@@ -1,0 +1,35 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.footer-area{
+    padding: $sectionPadding;
+    background-image: url('../../../images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    & ul{
+        & li{
+            padding-bottom: 10px;
+        }
+        & .icon{
+            height: 40px;
+            width: 40px;
+            color: #1cc7c1;
+            border-radius: 50%;
+            border: 1px solid #6ACECE;
+            padding: 10px;
+        }
+        & .active-icon{
+            background-color: #6ACECE ;
+            color:white;
+        }
+    }
+    & button{
+        @extend %button;
+    }
+}
+
+

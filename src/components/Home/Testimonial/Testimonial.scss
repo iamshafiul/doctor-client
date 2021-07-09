@@ -1,0 +1,33 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.testimonial{
+    padding: $sectionPadding;
+    & .title{
+        & h5{
+            @extend %subTitle;
+            text-align: left
+        }
+        & h3{
+            @extend %title;
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+// responsive code
+@media (max-width: 767px) { 
+    & .title{
+        & h5{
+            text-align: center !important;
+        }
+        & h3{
+            text-align: center !important;
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.exceptional{
+    padding-bottom: 200px;
+    & .content{
+        & button{
+            @extend %button;
+        }
+    }
+}

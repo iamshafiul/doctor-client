@@ -1,0 +1,14 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+
+.card{
+    & .card-body{
+        & button{
+            @extend %button;
+        }
+        & h5{
+            color: $primary-color;
+        }
+    }
+}

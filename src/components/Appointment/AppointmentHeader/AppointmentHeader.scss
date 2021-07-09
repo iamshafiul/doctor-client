@@ -1,0 +1,19 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.appointment-header{
+    background-image: url('../../../images/bg-chair.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    & .title{
+        & h3{
+            @extend %title;
+            text-align: left;
+        }
+    }
+}

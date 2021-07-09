@@ -1,0 +1,31 @@
+@import '../../../Styles/Shared/Color.scss';
+
+.header-container {
+    height:850px;
+    position:relative;
+    background-image: url('../../../images/bg-chair.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-container::after{
+    height:850px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 34%;
+    right: 0;
+    background-color: $dark-color;
+    z-index: -1;
+}
+
+
+
+
+// responsive code
+@media (max-width: 767px) { 
+    .header-container::after{
+        height:0px;
+    }
+}
+

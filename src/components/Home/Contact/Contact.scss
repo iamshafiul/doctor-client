@@ -1,0 +1,56 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+.contact{
+    padding: $sectionPadding;
+    background-image: url('../../../images/appoint-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0; 
+    }
+    & .title{
+        position: relative;
+        z-index: 1;
+        & h5{
+            @extend %subTitle;
+        }
+        & h3{
+            @extend %title;
+            color: $white-color;
+        }
+    }
+    & form{
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        & input, textarea{
+            font-style: italic;
+            border-radius: 0px;
+            border: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        & .btn-link{
+            text-transform: uppercase;
+            color: $dark-color;
+            text-decoration: underline;
+            font-weight: $semi-bold;
+        }
+        & .form-btn{
+            text-align: center;
+            & button{
+                @extend %button;
+            }
+        }
+    }
+}

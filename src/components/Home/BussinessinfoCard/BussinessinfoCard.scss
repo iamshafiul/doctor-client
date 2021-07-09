@@ -1,0 +1,27 @@
+@import '../../../Styles/Shared/Color.scss';
+
+.info-primary{
+    background-color: $primary-color !important;
+}
+.info-dark{
+    background-color: $dark-color !important;
+}
+
+.info-card{
+    padding: 20px;
+    height: 140px;
+    border-radius: 5px;
+    & .icon{
+        font-size: 50px;
+        margin-right: 20px;
+    }
+    & .content{
+        & h5{
+            margin-bottom: 10px;
+        }
+        & p{
+            font-size: 13px;
+            color: $white-color !important;
+        }
+    }
+}

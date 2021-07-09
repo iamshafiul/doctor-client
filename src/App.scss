@@ -1,0 +1,54 @@
+@import './Styles/Shared/Color.scss';
+@import './Styles/Shared/FontDefinition.scss';
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Domine', serif;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+p{
+  font-size: 18px !important;
+  color: $black-color;
+  font-size: $reguler-font-size;
+  line-height: 1.5;
+  font-weight: $reguler;
+}
+
+a{
+  text-decoration: none !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 20px;
+  font-weight: $bold;
+}
+h2{
+  font-size: 35px !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../Styles/Shared/Color.scss';
+@import '../../../Styles/Shared/FontDefinition.scss';
+@import '../../../Styles/Shared/Reusable.scss';
+
+
+form{
+    & button{
+        @extend %button;
+    }
+}
